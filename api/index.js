@@ -24,7 +24,7 @@ app.get('/api/', async (req, res) => {
             currency: tomaData.currency,
             full_name: tomaData.full_name,
             latest_deal_price: latestDealPrice,
-            highest_buy_price: highes_buy_price",
+            highest_buy_price: highestBuyPrice
             
         });
     } catch (error) {
