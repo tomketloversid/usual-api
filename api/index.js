@@ -17,12 +17,15 @@ app.get('/api/', async (req, res) => {
         // Extract relevant data
         const tomaData = response.data.data;
         const latestDealPrice = parseFloat(tomaData.latest_deal_price);
+        const highestBuyPrice = parseFloat(tomaData.highest_buy_price);
 
         // Send data as a response
         res.json({
             currency: tomaData.currency,
             full_name: tomaData.full_name,
-            latest_deal_price: latestDealPrice
+            latest_deal_price: latestDealPrice,
+            highest_buy_price: highes_buy_price",
+            
         });
     } catch (error) {
         console.error('Error fetching data from Gate.io:', error);
